@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 5px 5px 0px;
+  display: inline-block;
+}
+
+/* Style the submit button */
+button {
+  padding: 10px;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+  outline: none;
+  font-size: medium;
+}
+
+input[type="file"] {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  padding: 20px 20px 20px 0;
+  margin: 1px auto;
+  width: 580px;
+  max-width: 100%;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+input {
+  margin-bottom: 1rem;
+  font-size: medium;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 3%;
+  padding-bottom: 1%;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type="submit"] + a {
+  text-decoration: none;
+}
+
+input[type="text"]:focus,
+input[id="Video"]:focus {
+  border-color: #2ecc71;
+}
+
+input[type="datetime-local"] {
+  font-size: medium;
+  width: 67.5%;
+  padding: 10px;
+  resize: vertical;
+}
+
+input[type="button"] {
+  border: 0;
+  background: none;
+  margin: 2% auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  font-weight: 550;
+}
+input[type="button"]:hover {
+  background: #2ecc71;
+  color: white;
+  transition: 0.4s ease-in;
+}
+
+footer {
+  display: flex;
+  font-size: 17px;
+  padding: 20px;
+  background: #34495e;
+  color: white;
+  justify-content: space-between;
+}
+
+.Useful-links {
+  flex-direction: column;
+}
+
+.Menu {
+  flex-direction: column;
+}
+
+.Contacts {
+  float: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 4%;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: outside;
+}
+
+.Copyright {
+  display: block;
+  text-align: left;
+}
+
+.Credits {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 550px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
